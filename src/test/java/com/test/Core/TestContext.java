@@ -1,5 +1,6 @@
 package com.test.Core;
 
+import com.test.PageObjects.CommonPageObjects;
 import com.test.PageObjects.MainSearchPageObjects;
 import com.test.PageObjects.MainSerachFiltersPageObjects;
 import io.cucumber.java.Scenario;
@@ -15,7 +16,7 @@ public class TestContext {
 
     public MainSearchPageObjects mainsearchpageobjects;
     public MainSerachFiltersPageObjects mainsearchfilterspageobjects;
-
+    public CommonPageObjects CommonPageObjects;
     public void initializedriver()
     {
         String browser= WebDriverFactory.browserName(browsernName);
@@ -33,6 +34,7 @@ public class TestContext {
     {
         mainsearchpageobjects = new MainSearchPageObjects(driver);
         mainsearchfilterspageobjects =  new MainSerachFiltersPageObjects(driver);
+        CommonPageObjects = new CommonPageObjects(driver);
 
     }
 

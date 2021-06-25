@@ -28,9 +28,9 @@ public class Hooks {
         testContext.scn= scn;
     }
 
-    @After
+   /* @After
     public void CloseBrowser()
     {
         testContext.closedriver();
-    }
+    }*/
 }

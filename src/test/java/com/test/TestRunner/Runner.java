@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 
         features = "classpath:Features",
         glue="",
-        dryRun = false
+        dryRun = true
 
 )
 public class Runner {
