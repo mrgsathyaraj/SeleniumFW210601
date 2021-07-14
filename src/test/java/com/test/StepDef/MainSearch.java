@@ -33,6 +33,7 @@ public class MainSearch {
     String Actual = testContext.driver.getTitle();
     Assert.assertEquals(Expected,Actual);
 
+
     }
 
-}
+ }

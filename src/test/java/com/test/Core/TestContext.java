@@ -12,15 +12,15 @@ public class TestContext {
     public int implicit_timeout_in_sec=2000;
     public WebDriver driver;
     public Scenario scn;
-    public String browsernName = "chrome";
+    //chrome,edge,opera,mozilla
 
     public MainSearchPageObjects mainsearchpageobjects;
     public MainSerachFiltersPageObjects mainsearchfilterspageobjects;
     public CommonPageObjects CommonPageObjects;
     public void initializedriver()
     {
-        String browser= WebDriverFactory.browserName(browsernName);
-        driver= WebDriverFactory.GetBrowserConnection(browser);
+        String browsernName = System.getProperty("browser", "chrome");
+        driver= WebDriverFactory.GetBrowserConnection(browsernName);
         driver.get(baseURL);
 
     }
@@ -32,6 +32,7 @@ public class TestContext {
 
     public void initializePageObjects()
     {
+
         mainsearchpageobjects = new MainSearchPageObjects(driver);
         mainsearchfilterspageobjects =  new MainSerachFiltersPageObjects(driver);
         CommonPageObjects = new CommonPageObjects(driver);

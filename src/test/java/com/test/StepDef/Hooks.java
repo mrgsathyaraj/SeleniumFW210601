@@ -21,8 +21,9 @@ public class Hooks {
 
 
     @Before
-    public void setupBrowser(Scenario scn)
+    public void setUp(Scenario scn)
     {
+
         testContext.initializedriver();
         testContext.initializePageObjects();
         testContext.scn= scn;

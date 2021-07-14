@@ -10,8 +10,9 @@ import org.junit.runner.RunWith;
 
         features = "classpath:Features",
         glue="",
-        dryRun = true
+        tags="@smoke",
+        dryRun = false
 
 )
-public class Runner {
+public class RunnerTest {
 }

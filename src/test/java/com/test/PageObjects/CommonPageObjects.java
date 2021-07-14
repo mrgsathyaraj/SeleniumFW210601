@@ -15,6 +15,8 @@ import java.util.Set;
 public class CommonPageObjects {
 
     public WebDriver driver;
+
+    
     By oAllCategories = By.xpath("//select[@id='searchDropdownBox']");
     boolean categoryPresent = false;
     By headerLogo = By.id("nav-logo-sprites");
