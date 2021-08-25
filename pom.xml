@@ -9,8 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>15</maven.compiler.source>
-        <maven.compiler.target>15</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -78,7 +78,6 @@
             <artifactId>log4j-core</artifactId>
             <version>2.14.1</version>
         </dependency>
-
     </dependencies>
     <build>
         <plugins>
@@ -86,15 +85,19 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M1</version>
                 <configuration>
-                    <forkCount>1</forkCount>
+                    <forkCount>2</forkCount>
                     <reuseForks>false</reuseForks>
                     <parallel>methods</parallel>
-                    <threadCount>1</threadCount>
+                    <threadCount>3</threadCount>
                     <perCoreThreadCount>false</perCoreThreadCount>
                     <!-- <useUnlimitedThreads>true</useUnlimitedThreads>-->
                     <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+                        <systemPropertyVariables>
+                            <browser>${browserm}</browser>
+                        </systemPropertyVariables>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 

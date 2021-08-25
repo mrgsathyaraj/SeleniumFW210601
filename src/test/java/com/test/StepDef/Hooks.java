@@ -7,6 +7,8 @@ import io.cucumber.java.Scenario;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.IOException;
+
 public class Hooks {
 
     WebDriver driver;
@@ -20,9 +22,8 @@ public class Hooks {
     }
 
 
-    @Before
-    public void setUp(Scenario scn)
-    {
+  @Before
+    public void setUp(Scenario scn) throws IOException {
 
         testContext.initializedriver();
         testContext.initializePageObjects();

@@ -9,10 +9,14 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
         features = "classpath:Features",
-        glue="",
+        glue="", //step def path
         tags="@smoke",
-        dryRun = false
+        dryRun = false,
+        monochrome = true,
+        plugin = {"pretty", "html:target/html-report/cucumber.html"}
+
 
 )
 public class RunnerTest {
+
 }

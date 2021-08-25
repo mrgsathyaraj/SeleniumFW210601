@@ -7,7 +7,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class MainSearch {
+public class MainSearch{
 
     TestContext testContext;
     Scenario scn;
@@ -32,6 +32,7 @@ public class MainSearch {
     String Expected = "Amazon.in : "+productItem;
     String Actual = testContext.driver.getTitle();
     Assert.assertEquals(Expected,Actual);
+
 
 
     }
