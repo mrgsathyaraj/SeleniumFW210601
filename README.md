@@ -13,7 +13,7 @@ Java Concepts String , Collections, Super , this , Inheritance , Interface ,Stat
 Gherkins Syntax Donem (Needs more pratice on this with multiple data in the data driven and try rule concept)
 Access database inside the selenium BDD framework (implementation required and learning too )
 
-Others :
+Others :-
 
 Learn about Agile Scrum Model detailed way 
 API respone code for which methods 
