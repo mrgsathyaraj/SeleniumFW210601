@@ -13,7 +13,12 @@ import org.junit.runner.RunWith;
         tags="@smoke",
         dryRun = false,
         monochrome = true,
-        plugin = {"pretty", "html:target/html-report/cucumber.html"}
+        plugin = {"pretty", // to generate reports
+                //"html:target/html/htmlreport.html",
+               // "json:target/json/file.json",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+        },
+        publish=true
 
 
 )
