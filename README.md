@@ -1,4 +1,4 @@
-Learning Progress :
+**Learning Progress :**
 
 Jenkins Done (Freestyle , scripted pipeline ,declarative pipeline , pipeline plugin to add other project by adding dependency )
 
@@ -24,8 +24,8 @@ Gherkins Syntax Donem (Needs more pratice on this with multiple data in the data
 
 Access database inside the selenium BDD framework (implementation required and learning too )
 
-
-Others :-
+**
+Others :-**
 
 Learn about Agile Scrum Model detailed way 
 
