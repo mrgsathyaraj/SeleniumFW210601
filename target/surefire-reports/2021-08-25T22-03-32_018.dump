@@ -1,0 +1,38 @@
+# Created at 2021-08-25T22:03:33.300
+Boot Manifest-JAR contains absolute paths in classpath E:\SeleniumFW210601\target\test-classes
+java.lang.IllegalArgumentException: 'other' has different root
+	at sun.nio.fs.WindowsPath.relativize(WindowsPath.java:392)
+	at sun.nio.fs.WindowsPath.relativize(WindowsPath.java:44)
+	at org.apache.maven.plugin.surefire.booterclient.JarManifestForkConfiguration.toClasspathElementUri(JarManifestForkConfiguration.java:153)
+	at org.apache.maven.plugin.surefire.booterclient.JarManifestForkConfiguration.createJar(JarManifestForkConfiguration.java:120)
+	at org.apache.maven.plugin.surefire.booterclient.JarManifestForkConfiguration.resolveClasspath(JarManifestForkConfiguration.java:75)
+	at org.apache.maven.plugin.surefire.booterclient.DefaultForkConfiguration.createCommandLine(DefaultForkConfiguration.java:147)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:580)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.access$600(ForkStarter.java:116)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter$2.call(ForkStarter.java:445)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter$2.call(ForkStarter.java:421)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2021-08-25T22:03:33.305
+Boot Manifest-JAR contains absolute paths in classpath E:\SeleniumFW210601\target\classes
+java.lang.IllegalArgumentException: 'other' has different root
+	at sun.nio.fs.WindowsPath.relativize(WindowsPath.java:392)
+	at sun.nio.fs.WindowsPath.relativize(WindowsPath.java:44)
+	at org.apache.maven.plugin.surefire.booterclient.JarManifestForkConfiguration.toClasspathElementUri(JarManifestForkConfiguration.java:153)
+	at org.apache.maven.plugin.surefire.booterclient.JarManifestForkConfiguration.createJar(JarManifestForkConfiguration.java:120)
+	at org.apache.maven.plugin.surefire.booterclient.JarManifestForkConfiguration.resolveClasspath(JarManifestForkConfiguration.java:75)
+	at org.apache.maven.plugin.surefire.booterclient.DefaultForkConfiguration.createCommandLine(DefaultForkConfiguration.java:147)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:580)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.access$600(ForkStarter.java:116)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter$2.call(ForkStarter.java:445)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter$2.call(ForkStarter.java:421)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
